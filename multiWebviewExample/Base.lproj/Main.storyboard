@@ -1,26 +1,300 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HGX-wj-zWM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Google2-->
+        <scene sceneID="NEn-A3-hqR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="S4Z-2K-63k" userLabel="Google2" customClass="SecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="XDp-Gq-jTt"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzP-2l-bLK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="cLe-72-540">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="icp-Aa-5Hl">
+                                <rect key="frame" x="0.0" y="17" width="375" height="601"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="Icd-Gd-rdZ"/>
+                    <connections>
+                        <outlet property="webview" destination="icp-Aa-5Hl" id="bnQ-hS-Mb5"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZBb-Pw-IHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="604" y="366.56671664167919"/>
+        </scene>
+        <!--Google-->
+        <scene sceneID="kHx-K4-mIE">
+            <objects>
+                <viewController id="P1E-Xx-FCk" userLabel="Google" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OGw-4S-5kx"/>
+                        <viewControllerLayoutGuide type="bottom" id="j5P-oF-6bg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zrx-6H-AZr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpK-aF-Tbi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="306-Dc-e0O" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="lpK-aF-Tbi" id="R98-J1-DRz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4q-8w-qHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="-287.40629685157421"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8mv-XF-FQr">
+            <objects>
+                <tabBarController id="HGX-wj-zWM" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jsU-an-tZO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="P1E-Xx-FCk" kind="relationship" relationship="viewControllers" id="Sjx-SQ-idn"/>
+                        <segue destination="S4Z-2K-63k" kind="relationship" relationship="viewControllers" id="VMS-qe-DiH"/>
+                        <segue destination="nhQ-5y-QHs" kind="relationship" relationship="viewControllers" id="3aK-dT-2Bw"/>
+                        <segue destination="i9y-ux-bsm" kind="relationship" relationship="viewControllers" id="ULW-lL-fYm"/>
+                        <segue destination="QCk-jd-slj" kind="relationship" relationship="viewControllers" id="DK2-or-DII"/>
+                        <segue destination="qbf-bf-oFV" kind="relationship" relationship="viewControllers" id="7iN-1c-eNm"/>
+                        <segue destination="jbl-0S-PPU" kind="relationship" relationship="viewControllers" id="pvl-t5-X1i"/>
+                        <segue destination="cjA-7w-QM8" kind="relationship" relationship="viewControllers" id="EOx-Cd-Hak"/>
+                        <segue destination="LF6-iq-D4H" kind="relationship" relationship="viewControllers" id="bGw-yk-6Nr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IQP-9Z-Zre" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-350" y="40"/>
+        </scene>
+        <!--Google3-->
+        <scene sceneID="Gz2-eX-9HW">
+            <objects>
+                <viewController id="nhQ-5y-QHs" userLabel="Google3" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lpt-hE-U73"/>
+                        <viewControllerLayoutGuide type="bottom" id="ab6-cc-1bK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fbr-J8-Pvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rC5-kD-ghY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="KKm-U3-9k3" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="rC5-kD-ghY" id="xD3-ln-6CQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FL-n1-pbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="-751"/>
+        </scene>
+        <!--Google4-->
+        <scene sceneID="w44-Qy-ndN">
+            <objects>
+                <viewController id="i9y-ux-bsm" userLabel="Google4" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C6s-ul-Jsl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bkm-lD-cvk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RMa-Ig-13j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fq2-YP-gMq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="PRP-iZ-b7v" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="Fq2-YP-gMq" id="AKr-54-iWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Au-sR-EHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-950" y="-752"/>
+        </scene>
+        <!--PGM-->
+        <scene sceneID="g8V-GL-oxg">
+            <objects>
+                <viewController id="QCk-jd-slj" userLabel="PGM" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Ic-FO-kpa"/>
+                        <viewControllerLayoutGuide type="bottom" id="9TU-wL-uCQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bsk-3d-tg6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YJk-52-n5Q">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="6kJ-vT-Nkv" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="YJk-52-n5Q" id="gsl-3L-zZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBR-KB-Nbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1807" y="-370"/>
+        </scene>
+        <!--PGM1-->
+        <scene sceneID="wqi-Cs-zM9">
+            <objects>
+                <viewController id="qbf-bf-oFV" userLabel="PGM1" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fr1-Br-Uoq"/>
+                        <viewControllerLayoutGuide type="bottom" id="sxt-5z-SeG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XjN-yH-Kvi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZU-u2-J2C">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="Sbs-g6-bqg" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="UZU-u2-J2C" id="QNy-g1-JVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3U2-Og-j6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2633" y="-8"/>
+        </scene>
+        <!--PGM2-->
+        <scene sceneID="kbR-Tm-YBL">
+            <objects>
+                <viewController id="jbl-0S-PPU" userLabel="PGM2" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fME-7S-C94"/>
+                        <viewControllerLayoutGuide type="bottom" id="BOJ-AR-J3Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Rg-sI-iph">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DdS-sW-Yeo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="eL9-Mb-TlK" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="DdS-sW-Yeo" id="lOM-wE-To7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8X-lM-H6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1578" y="501"/>
+        </scene>
+        <!--PGM3-->
+        <scene sceneID="JKF-lU-ZcI">
+            <objects>
+                <viewController id="cjA-7w-QM8" userLabel="PGM3" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8t3-ge-AUc"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Eo-wf-kD5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="34C-6i-n7g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-j4-AyE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="v3K-ni-T6f" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="fOT-j4-AyE" id="rGI-mn-doU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMa-6a-1gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2634" y="892"/>
+        </scene>
+        <!--PGM4-->
+        <scene sceneID="bTg-GY-REu">
+            <objects>
+                <viewController id="LF6-iq-D4H" userLabel="PGM4" customClass="FirstVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UTe-81-Yr7"/>
+                        <viewControllerLayoutGuide type="bottom" id="oXz-y7-eJ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y13-MJ-axh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VdF-X5-YV2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Google" id="QCR-pZ-rJ7" userLabel="Google"/>
+                    <connections>
+                        <outlet property="webview" destination="VdF-X5-YV2" id="SgX-rJ-Uhz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqv-D5-Gg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1460" y="1319"/>
         </scene>
     </scenes>
 </document>

@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		42B9FD0B1F72946C0090136F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9FD0A1F72946C0090136F /* main.m */; };
 		42B9FD0E1F72946C0090136F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9FD0D1F72946C0090136F /* AppDelegate.m */; };
-		42B9FD111F72946C0090136F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9FD101F72946C0090136F /* ViewController.m */; };
 		42B9FD141F72946C0090136F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B9FD121F72946C0090136F /* Main.storyboard */; };
 		42B9FD161F72946C0090136F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B9FD151F72946C0090136F /* Assets.xcassets */; };
 		42B9FD191F72946C0090136F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B9FD171F72946C0090136F /* LaunchScreen.storyboard */; };
+		42B9FD221F7298C70090136F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9FD211F7298C70090136F /* SecondViewController.m */; };
+		42B9FD251F729A530090136F /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9FD241F729A530090136F /* FirstVC.m */; };
+		42B9FD281F72B1CD0090136F /* build in Resources */ = {isa = PBXBuildFile; fileRef = 42B9FD261F72B1CD0090136F /* build */; };
+		42B9FD291F72B1CD0090136F /* kitchen-sink-ios in Resources */ = {isa = PBXBuildFile; fileRef = 42B9FD271F72B1CD0090136F /* kitchen-sink-ios */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +23,16 @@
 		42B9FD0A1F72946C0090136F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42B9FD0C1F72946C0090136F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42B9FD0D1F72946C0090136F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		42B9FD0F1F72946C0090136F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		42B9FD101F72946C0090136F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		42B9FD131F72946C0090136F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42B9FD151F72946C0090136F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42B9FD181F72946C0090136F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B9FD1A1F72946C0090136F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B9FD201F7298C70090136F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		42B9FD211F7298C70090136F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		42B9FD231F729A530090136F /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		42B9FD241F729A530090136F /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		42B9FD261F72B1CD0090136F /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
+		42B9FD271F72B1CD0090136F /* kitchen-sink-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "kitchen-sink-ios"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +67,13 @@
 			children = (
 				42B9FD0C1F72946C0090136F /* AppDelegate.h */,
 				42B9FD0D1F72946C0090136F /* AppDelegate.m */,
-				42B9FD0F1F72946C0090136F /* ViewController.h */,
-				42B9FD101F72946C0090136F /* ViewController.m */,
+				42B9FD261F72B1CD0090136F /* build */,
+				42B9FD271F72B1CD0090136F /* kitchen-sink-ios */,
+				42B9FD201F7298C70090136F /* SecondViewController.h */,
+				42B9FD211F7298C70090136F /* SecondViewController.m */,
 				42B9FD121F72946C0090136F /* Main.storyboard */,
+				42B9FD231F729A530090136F /* FirstVC.h */,
+				42B9FD241F729A530090136F /* FirstVC.m */,
 				42B9FD151F72946C0090136F /* Assets.xcassets */,
 				42B9FD171F72946C0090136F /* LaunchScreen.storyboard */,
 				42B9FD1A1F72946C0090136F /* Info.plist */,
@@ -110,6 +121,7 @@
 				TargetAttributes = {
 					42B9FD051F72946C0090136F = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 469Z9F553G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42B9FD191F72946C0090136F /* LaunchScreen.storyboard in Resources */,
+				42B9FD281F72B1CD0090136F /* build in Resources */,
+				42B9FD291F72B1CD0090136F /* kitchen-sink-ios in Resources */,
 				42B9FD161F72946C0090136F /* Assets.xcassets in Resources */,
 				42B9FD141F72946C0090136F /* Main.storyboard in Resources */,
 			);
@@ -150,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42B9FD111F72946C0090136F /* ViewController.m in Sources */,
+				42B9FD221F7298C70090136F /* SecondViewController.m in Sources */,
+				42B9FD251F729A530090136F /* FirstVC.m in Sources */,
 				42B9FD0E1F72946C0090136F /* AppDelegate.m in Sources */,
 				42B9FD0B1F72946C0090136F /* main.m in Sources */,
 			);
@@ -274,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 469Z9F553G;
 				INFOPLIST_FILE = multiWebviewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lisa.multiWebviewExample;
@@ -285,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 469Z9F553G;
 				INFOPLIST_FILE = multiWebviewExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lisa.multiWebviewExample;

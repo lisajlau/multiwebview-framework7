@@ -1,22 +1,25 @@
 //
-//  ViewController.m
+//  SecondViewController.m
 //  multiWebviewExample
 //
 //  Created by Lisa Lau on 20/09/2017.
 //  Copyright © 2017 Lisa Lau. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
+
+@interface SecondViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [_webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://bing.com"]]];
 }
 
 

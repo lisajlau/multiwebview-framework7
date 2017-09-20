@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FirstVC.h
 //  multiWebviewExample
 //
 //  Created by Lisa Lau on 20/09/2017.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FirstVC : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *webview;
 
 @end
-
